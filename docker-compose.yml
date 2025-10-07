@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  management_api:
+    build:
+      context: .
+      dockerfile: apps/management_api/Dockerfile
+      args:
+        PORT: 5000
+    environment:
+      - PORT=5000
+    ports:
+      - "5000:5000"
+
+  web_app:
+    build:
+      context: .
+      dockerfile: apps/web_app/Dockerfile
+      args:
+        PORT: 8501
+    environment:
+      - BACKEND_HOST=management_api
+      - BACKEND_PORT=5000
+    ports:
+      - "8501:8501"
+    depends_on:
+      - management_api
