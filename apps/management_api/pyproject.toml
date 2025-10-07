@@ -1,0 +1,17 @@
+[project]
+name = "management-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.116.1",
+    "ipython>=9.5.0",
+    "langchain>=0.3.27",
+    "langchain-anthropic>=0.3.19",
+    "langchain-openai>=0.3.29",
+    "langgraph>=0.6.4",
+    "pandas>=2.3.2",
+    "python-dotenv>=1.1.1",
+    "uvicorn[standard]>=0.35.0",
+]
