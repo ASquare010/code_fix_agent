@@ -2,6 +2,12 @@
 
 A modular infrastructure project for deploying Python microservices (FastAPI, Gradio) using Docker, and AWS.
 
+## View Project
+
+![Demo](assets/gradio_app.png)
+---
+![Demo](assets/gradio_app_1.png)
+
 ## Project Structure
 
 ```
